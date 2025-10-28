@@ -4,8 +4,12 @@ public class Main {
 //        GuessNumberGame guessNumberGame = new GuessNumberGame();
 //        guessNumberGame.guessNumber();
 //      //--------
-        SeasonByMonth seasonByMonth = new SeasonByMonth();
-        seasonByMonth.monthOfSeason();
+//        SeasonByMonth seasonByMonth = new SeasonByMonth();
+//        seasonByMonth.monthOfSeason();
+        //--------
+          SampleSwitch sampleSwitch = new SampleSwitch();
+          sampleSwitch.switchSampleMethod();
+        //--------
         //--------
         String weather = "sunny";
         forOddNumbersPrinter (0, 5);
