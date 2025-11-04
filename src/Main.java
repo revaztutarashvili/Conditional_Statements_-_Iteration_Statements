@@ -10,9 +10,9 @@ public class Main {
 //          SampleSwitch sampleSwitch = new SampleSwitch();
 //          sampleSwitch.switchSampleMethod();
         //--------
-        WhileDemonstrante whileDemonstrante = new WhileDemonstrante();
-        whileDemonstrante.happyNewYear();
-        whileDemonstrante.midPointfinder();
+        WhileDemonstrate whileDemonstrate = new WhileDemonstrate();
+        whileDemonstrate.happyNewYear();
+        whileDemonstrate.midPointfinder();
         //--------
 
         String weather = "sunny";

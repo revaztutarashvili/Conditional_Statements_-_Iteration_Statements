@@ -1,4 +1,4 @@
-public class WhileDemonstrante {
+public class WhileDemonstrate {
     int n = 10;
     public void happyNewYear(){
         while (n>0){
