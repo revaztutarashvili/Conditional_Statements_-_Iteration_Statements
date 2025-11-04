@@ -7,10 +7,14 @@ public class Main {
 //        SeasonByMonth seasonByMonth = new SeasonByMonth();
 //        seasonByMonth.monthOfSeason();
         //--------
-          SampleSwitch sampleSwitch = new SampleSwitch();
-          sampleSwitch.switchSampleMethod();
+//          SampleSwitch sampleSwitch = new SampleSwitch();
+//          sampleSwitch.switchSampleMethod();
         //--------
+        WhileDemonstrante whileDemonstrante = new WhileDemonstrante();
+        whileDemonstrante.happyNewYear();
+        whileDemonstrante.midPointfinder();
         //--------
+
         String weather = "sunny";
         forOddNumbersPrinter (0, 5);
         forEvenNumbersPrinter(0, 5);
