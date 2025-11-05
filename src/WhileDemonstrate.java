@@ -21,7 +21,7 @@ public class WhileDemonstrate {
 
         while (++i < --x){
             //no body while example;
-            // test commit
+            //ტესტი
         }
         System.out.println("midpoint is: " + i);
     }
