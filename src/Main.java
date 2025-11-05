@@ -10,9 +10,14 @@ public class Main {
 //          SampleSwitch sampleSwitch = new SampleSwitch();
 //          sampleSwitch.switchSampleMethod();
         //--------
-        WhileDemonstrate whileDemonstrate = new WhileDemonstrate();
-        whileDemonstrate.happyNewYear();
-        whileDemonstrate.midPointfinder();
+//        WhileDemonstrate whileDemonstrate = new WhileDemonstrate();
+//        whileDemonstrate.happyNewYear();
+//        whileDemonstrate.midPointfinder();
+        //--------
+        DoWhile doWhile = new DoWhile();
+        doWhile.doWhileHNY();
+        //--------
+        //--------
         //--------
 
         String weather = "sunny";
