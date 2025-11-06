@@ -49,7 +49,15 @@ public class DoWhile {
                 System.out.println("while (conditional) statement;)");
                 break;
             case '4':
-                
+                System.out.println("The do-while:\n");
+                System.out.println("do {");
+                System.out.println("    statement");
+                System.out.println("} while (condition);");
+                break;
+            case '5':
+                System.out.println("The for\n");
+                System.out.println("for (init, condition, iteration)");
+                System.out.println(" statement;");
 
         }
     }
