@@ -1,5 +1,7 @@
+import java.io.IOException;
+
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         //---------
 //        GuessNumberGame guessNumberGame = new GuessNumberGame();
 //        guessNumberGame.guessNumber();
@@ -12,11 +14,13 @@ public class Main {
         //--------
 //        WhileDemonstrate whileDemonstrate = new WhileDemonstrate();
 //        whileDemonstrate.happyNewYear();
-//        whileDemonstrate.midPointfinder();
+//        whileDemonstrate.midPointFinder();
         //--------
-        DoWhile doWhile = new DoWhile();
-        doWhile.doWhileHNY();
+//        DoWhile doWhile = new DoWhile();
+//        doWhile.doWhileHNY();
         //--------
+        DoWhile doWhile1 = new DoWhile();
+        doWhile1.conditionalInfoMenu();
         //--------
         //--------
 

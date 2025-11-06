@@ -14,7 +14,7 @@ public class WhileDemonstrate {
     }
 
 
-    public void midPointfinder(){
+    public void midPointFinder(){
         int i, x;
         i = 100;
         x = 200;
