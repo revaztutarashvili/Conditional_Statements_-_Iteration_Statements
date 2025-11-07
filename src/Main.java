@@ -25,6 +25,8 @@ public class Main {
         ForEachLoop forEachLoop =new ForEachLoop();
         forEachLoop.simpleForEAchExample();
         //--------
+        ForEachLoop forEachBreakExample = new ForEachLoop();
+        forEachBreakExample.forEachBreak();
 //
 //        String weather = "sunny";
 //        forOddNumbersPrinter (0, 5);
