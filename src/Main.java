@@ -27,6 +27,9 @@ public class Main {
         //--------
         ForEachLoop forEachBreakExample = new ForEachLoop();
         forEachBreakExample.forEachBreak();
+        //--------
+        ForEachLoop immutable = new ForEachLoop();
+        immutable.forEachIsReadOnly();
 //
 //        String weather = "sunny";
 //        forOddNumbersPrinter (0, 5);
