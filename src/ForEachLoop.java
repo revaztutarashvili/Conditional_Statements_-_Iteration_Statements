@@ -51,4 +51,37 @@ iteration variable a new value.
             System.out.println(x+" ");//output იქნება ისევ 1 დან 10-ის ჩათვლით, ეს მოოწმობს რომ მასივის ელემენტეები ვერ შეცვალა
         }
     }
+
+    /*
+    -
+    -
+    -
+    */
+    /*
+    -int [][] nums = new int[3][5] აქ ნიშნავს რომ "nums" არის მასივების მასივი, რაც იმას ნიშნავს რომ
+    ჩვენ ვქმნით "მთავარ" array-ს, რომელსაც აქვს 3 ელემენტი int[3]. თავის მხრივ, ამ 3 ელემენტიდან თითოეული არის სხვა array,
+    რომლის ზომაა 5 (int[5]). ანუ:
+    nums[0] არის int[0, 0, 0, 0, 0] array
+    nums[1] არის int[0, 0, 0, 0, 0] array
+    nums[2] არის int[0, 0, 0, 0, 0] array
+    -
+    -
+    */
+    public void multiDimensionalArrayIterating (){
+    int sum =0;
+    int [][] nums = new int[3][5];
+//give nums some value
+    for (int i =0; i<3; i++)
+       for (int j =0; j<5; j++)
+           nums [i] [j] = (i+1)*(j+1);
+//use for-each for to display and sum values
+        for (int [] x : nums) {
+            for (int y : x) {
+                System.out.println("value is: " + y);
+                sum +=y;
+            }
+            System.out.println();
+        }
+        System.out.println("Sum is : "+sum);
+    }
 }

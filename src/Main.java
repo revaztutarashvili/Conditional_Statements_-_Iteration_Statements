@@ -25,11 +25,11 @@ public class Main {
         ForEachLoop forEachLoop =new ForEachLoop();
         forEachLoop.simpleForEAchExample();
         //--------
-        ForEachLoop forEachBreakExample = new ForEachLoop();
-        forEachBreakExample.forEachBreak();
+        forEachLoop.forEachBreak();
         //--------
-        ForEachLoop immutable = new ForEachLoop();
-        immutable.forEachIsReadOnly();
+        forEachLoop.forEachIsReadOnly();
+        //--------
+        forEachLoop.multiDimensionalArrayIterating();
 //
 //        String weather = "sunny";
 //        forOddNumbersPrinter (0, 5);
