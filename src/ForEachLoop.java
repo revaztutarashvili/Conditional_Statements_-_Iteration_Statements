@@ -110,4 +110,53 @@ iteration variable a new value.
             } System.out.println("value not found: " + x);
         }
     }
+
+
+ /*
+-  ლოკალური ცვლადის გამოცნობის ფუნქცია:
+
+- შეგიძლიათ გამოიყენოთ var საკვანძო სიტყვა ცვლადის ტიპის (int, double და ა.შ.) ნაცვლად, და compiler-ი თავად "მიხვდება"
+  (მოახდენს inference-ს), თუ რა type-ია საჭირო.
+
+- compiler-ი ხედავს var-ს და ხვდება, რომ type-ი უნდა გამოიცნოს. ის აკვირდება ცვლადის initializer-ს (მნიშვნელობას,
+  რომელსაც მას ანიჭებთ): = 2.5.  ის ხვდება რომ Double ტიპი უნდა დააბრუნოს.
+
+- ტერმინი var არის Local Variable Type Inference-ის (ლოკალური ცვლადის ტიპის გამოცნობის) შემოკლება.
+
+- var-ის მთავარი დატვირთვაა უთხრას compiler-ს: "შენ ხომ ხედავ, რას ვანიჭებ ამ ცვლადს? ხოდა, თავად მიხვდი, რა type-ია
+  და მეორედ აღარ დამაწერინო." Compiler-ი აკვირდება გამოსახულებას მინიჭების (=) ნიშნის მარჯვნივ და ადგენს ცვლადის type-ს.
+
+-სად არ შეიძლება var-ის გამოყენება?
+1. არ შეიძლება Class-ის Field-ებისთვის (Instance Variables):
+                                                              class MyClass {
+                                                              private var name = "Test"; // <-- ERROR!
+                                                              }
+2. არ შეიძლება მეთოდის Parameter-ებისთვის:
+                                             public void myMethod(var input) { // <-- ERROR!
+                                             // ...
+                                             }
+
+3. არ შეიძლება მეთოდის Return Type-ისთვის:
+                                           public var myMethod() { // <-- ERROR!
+                                           return "Hello";
+                                           }
+4. აუცილებლად სჭირდება ინიციალიზაცია (მინიჭება) იმავე ხაზზე:
+                                                            var name; // <-- ERROR!
+                                                            name = "John";
+
+5. არ შეიძლება null-ის მინიჭება:  var name = null; // <-- ERROR!
+  */
+    public void localVariableTypeInference (){
+
+        // use function in "for-each" :
+        int [] nums = {1,2,3,4,5};
+        for (var x : nums)
+            System.out.print( x + ", ");
+
+        // use function for "for loop":
+        System.out.println("values of x: ");
+        for (var x = 2.5; x < 100; x= x*2)
+            System.out.print(x + ", ");
+
+    }
 }

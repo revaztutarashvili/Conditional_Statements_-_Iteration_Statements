@@ -23,15 +23,17 @@ public class Main {
 //        doWhile1.conditionalInfoMenu();
         //--------
         ForEachLoop forEachLoop =new ForEachLoop();
-        forEachLoop.simpleForEAchExample();
+//        forEachLoop.simpleForEAchExample();
+//        //--------
+//        forEachLoop.forEachBreak();
+//        //--------
+//        forEachLoop.forEachIsReadOnly();
+//        //--------
+//        forEachLoop.multiDimensionalArrayIterating();
+//        //--------
+//        forEachLoop.linearSearchByForEach();
         //--------
-        forEachLoop.forEachBreak();
-        //--------
-        forEachLoop.forEachIsReadOnly();
-        //--------
-        forEachLoop.multiDimensionalArrayIterating();
-        //--------
-        forEachLoop.linearSearchByForEach();
+        forEachLoop.localVariableTypeInference();
 //
 //        String weather = "sunny";
 //        forOddNumbersPrinter (0, 5);
