@@ -104,9 +104,10 @@ iteration variable a new value.
 
         for (int x : nums){
             if (x==val){
-                System.out.println("value found!");
+                System.out.println("value found! '" + x+"'");
                 break;
-            }
+
+            } System.out.println("value not found: " + x);
         }
     }
 }
