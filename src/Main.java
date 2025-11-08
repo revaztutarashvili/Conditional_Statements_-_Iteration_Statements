@@ -30,6 +30,8 @@ public class Main {
         forEachLoop.forEachIsReadOnly();
         //--------
         forEachLoop.multiDimensionalArrayIterating();
+        //--------
+        forEachLoop.linearSearchByForEach();
 //
 //        String weather = "sunny";
 //        forOddNumbersPrinter (0, 5);
