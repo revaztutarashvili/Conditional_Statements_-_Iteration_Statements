@@ -35,8 +35,12 @@ public class Main {
         //--------
 //        forEachLoop.localVariableTypeInference();
         //---------
-NestedLoops nestedLoops = new NestedLoops();
-nestedLoops.checkNestedLoop();
+//      NestedLoops nestedLoops = new NestedLoops();
+//      nestedLoops.checkNestedLoop();
+        //----------
+        JumpStatements jumpStatements = new JumpStatements();
+        jumpStatements.labeledBreakGoTo();
+
 //        String weather = "sunny";
 //        forOddNumbersPrinter (0, 5);
 //        forEvenNumbersPrinter(0, 5);
