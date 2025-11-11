@@ -33,8 +33,10 @@ public class Main {
 //        //--------
 //        forEachLoop.linearSearchByForEach();
         //--------
-        forEachLoop.localVariableTypeInference();
-//
+//        forEachLoop.localVariableTypeInference();
+        //---------
+NestedLoops nestedLoops = new NestedLoops();
+nestedLoops.checkNestedLoop();
 //        String weather = "sunny";
 //        forOddNumbersPrinter (0, 5);
 //        forEvenNumbersPrinter(0, 5);
