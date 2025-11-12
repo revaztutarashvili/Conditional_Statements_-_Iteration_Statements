@@ -6,3 +6,8 @@
 - for each loop
 - while loop;
 - do while;
+
+### Jump statements:
+- break; (also labeled break like GoTo function)
+- continue;
+- return;
