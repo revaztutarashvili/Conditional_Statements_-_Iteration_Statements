@@ -40,6 +40,8 @@ public class Main {
         //----------
         JumpStatements jumpStatements = new JumpStatements();
         jumpStatements.labeledBreakGoTo();
+        //______________
+        jumpStatements.continueJumpStatement();
 
 //        String weather = "sunny";
 //        forOddNumbersPrinter (0, 5);

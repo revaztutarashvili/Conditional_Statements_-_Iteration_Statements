@@ -48,4 +48,38 @@ public class JumpStatements {
             System.out.println("this text is after second block");
         }
     }
+
+    /*
+- break ნიშნავს: "სრულად შეწყვიტე ეს loop და გამიყვანე გარეთ."
+
+- continue ნიშნავს: "შეწყვიტე მხოლოდ ეს ერთი iteration (რაუნდი), დააიგნორე ყველაფერი, რაც ჩემს შემდეგ წერია,
+  და პირდაპირ გადადი შემდეგ iteration-ზე."
+
+- როდესაც i = 0 (ლუწია):
+    - if პირობა true-ა.
+        - სრულდება continue.
+           -  continue არ ხტება i < 10-ზე (პირობაზე).
+               - ის ხტება iteration ნაწილზე: სრულდება i++. i ხდება 1.
+                    - ამის შემდეგ სრულდება condition ნაწილი: i < 10 (1 < 10) true-ა.
+                        - loop გრძელდება.  
+
+- for loop-ში continue განსაკუთრებულად მუშაობს. ის არ ხტება პირდაპირ პირობის შემოწმებაზე (i < 10).
+  ის ხტება iteration ნაწილზე (i++). ეს უზრუნველყოფს, რომ loop-ი არასდროს გაიჭედოს (არ გახდეს უსასრულო(infinite loop)).
+
+- ამრიგად, for ციკლში continue გამოყენება უსაფრთხოა, ხოლო switch-ში კი შეიძლება infinite loop გამოიწვიოს.
+
+-
+     */
+
+    public void continueJumpStatement(){
+
+                for (int i = 0; i < 10; i++) {
+                    System.out.print(i + " ");
+
+                    if (i % 2 == 0) continue; //<-- მთავარი ლოგიკა(ანუ თუ ლუწია ტოვებს ქვედა პრინტს და გაადახტება i++ ზე)
+
+                    System.out.println(""); // <-- ეს კოდი "გამოტოვებული" იქნება თუ ლუწია რიცხვი
+                }
+    }
+
 }
